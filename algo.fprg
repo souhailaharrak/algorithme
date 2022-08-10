@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-07-11 07:11:51 "/>
+        <attribute name="created" value="aHA7REVTS1RPUC1SVjg3SDFROzIwMjItMDctMTE7IjA1OjU0OjAwICI7MjQ2NA=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC1SVjg3SDFROzIwMjItMDctMTE7IjA3OjExOjUxICI7MTsyNTcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="l" type="Boolean" array="False" size=""/>
+            <declare name="w" type="Boolean" array="False" size=""/>
+            <output expression="&quot;entre votre age&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;vou avez un licence&quot;" newline="True"/>
+            <input variable="l"/>
+            <output expression="&quot;vous aver remondiation&quot;" newline="True"/>
+            <input variable="w"/>
+            <if expression="w=true">
+                <then>
+                    <output expression="&quot;bienvune&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="a&gt;=21 &amp;&amp; l==true">
+                        <then>
+                            <output expression="&quot;hired&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;registre&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

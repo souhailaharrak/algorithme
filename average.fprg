@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-07-11 10:28:10 "/>
+        <attribute name="created" value="aHA7REVTS1RPUC1SVjg3SDFROzIwMjItMDctMTE7IjA3OjQ2OjExICI7MjQ2OQ=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC1SVjg3SDFROzIwMjItMDctMTE7IjEwOjI4OjEwICI7MTsyNTcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1" type="Integer" array="False" size=""/>
+            <declare name="n2" type="Integer" array="False" size=""/>
+            <declare name="n3" type="Integer" array="False" size=""/>
+            <declare name="som" type="Integer" array="False" size=""/>
+            <output expression="&quot;entre number 2&quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;entre number 1&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;entre number 3&quot;" newline="True"/>
+            <input variable="n3"/>
+            <assign variable="som" expression="(n1+n2+n3)/3"/>
+            <if expression="som&gt;=50">
+                <then>
+                    <output expression="&quot;pass&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;fail&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="som" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

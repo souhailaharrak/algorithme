@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-07-17 09:38:23 "/>
+        <attribute name="created" value="aHA7REVTS1RPUC1SVjg3SDFROzIwMjItMDctMTc7IjA4OjIxOjIzICI7MjQ3Mg=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC1SVjg3SDFROzIwMjItMDctMTc7IjA5OjM4OjIzICI7MTsyNTg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="notes" type="Integer" array="False" size=""/>
+            <output expression="&quot;entrz votre notes&quot;" newline="True"/>
+            <input variable="notes"/>
+            <if expression="notes&gt;=90 and notes&lt;=100">
+                <then>
+                    <output expression="&quot;A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="notes&gt;=80 and notes&lt;=89">
+                        <then>
+                            <output expression="&quot;B&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="notes&gt;=70 and notes&lt;=79">
+                                <then>
+                                    <output expression="&quot;C&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="notes&gt;=60 and notes&lt;=69">
+                                        <then>
+                                            <output expression="&quot;D&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="notes&gt;=50 and notes&lt;=59">
+                                                <then>
+                                                    <output expression="&quot;E&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;f&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

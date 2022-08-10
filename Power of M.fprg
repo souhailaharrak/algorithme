@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-07-17 08:05:34 "/>
+        <attribute name="created" value="aHA7REVTS1RPUC1SVjg3SDFROzIwMjItMDctMTc7IjA3OjA2OjA4ICI7MjQ3Nw=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC1SVjg3SDFROzIwMjItMDctMTc7IjA4OjA1OjM0ICI7MTsyNTg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="m" type="Integer" array="False" size=""/>
+            <declare name="s" type="Integer" array="False" size=""/>
+            <declare name="v" type="Integer" array="False" size=""/>
+            <output expression="&quot;entre un number&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="p" type="Integer" array="False" size=""/>
+            <output expression="&quot;entre m&quot;" newline="True"/>
+            <assign variable="p" expression="1"/>
+            <input variable="m"/>
+            <if expression="m==0">
+                <then>
+                    <output expression="p" newline="True"/>
+                </then>
+                <else>
+                    <for variable="v" start="1" end="m" direction="inc" step="1">
+                        <assign variable="s" expression="n^m"/>
+                    </for>
+                    <output expression="s" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

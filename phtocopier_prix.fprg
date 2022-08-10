@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-02 06:34:33 "/>
+        <attribute name="created" value="aHA7REVTS1RPUC1SVjg3SDFROzIwMjItMDgtMDI7IjA1OjQ0OjEyICI7MjQ2Nw=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC1SVjg3SDFROzIwMjItMDgtMDI7IjA2OjM0OjMzICI7MTsyNTc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="photocopie" type="Integer" array="False" size=""/>
+            <declare name="B" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <input variable="photocopie"/>
+            <if expression="photocopie&lt;10">
+                <then>
+                    <assign variable="B" expression="photocopie*0.30"/>
+                    <output expression="B" newline="True"/>
+                </then>
+                <else>
+                    <if expression="photocopie&lt;30">
+                        <then>
+                            <assign variable="B" expression="0.30*10+(photocopie-10)*0.25"/>
+                            <output expression="B" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="B" expression="0.30*10+20*0.25+(photocopie-30)*0.20"/>
+                            <output expression="B" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
